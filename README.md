@@ -17,6 +17,6 @@ export GITHUB_TOKEN=
 export GITHUB_USER=zzir
 
 echo $GITHUB_TOKEN | docker login ghcr.io -u $GITHUB_USER --password-stdin
-docker tag citus:11.3.0-alpine ghcr.io/zzir/citus:11.3.0-alpine
-docker push ghcr.io/zzir/citus:11.3.0-alpine
+docker tag citus:11.3.0-alpine ghcr.io/$GITHUB_USER/citus:11.3.0-alpine
+docker push ghcr.io/$GITHUB_USER/citus:11.3.0-alpine
 ```
